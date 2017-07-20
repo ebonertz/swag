@@ -9,8 +9,13 @@
   <input type="text" [(ngModel)]="name">
   <p>{{ name }}</p>
 <br>
-<div class="product-tile" style="border:1px solid black; width:100px; text-align:center;">
-  <h2> {{product.name}} </h2>
+<div class="product-tile" style="border:1px solid black; text-align:center;">
+  <h2> My Products</h2>
+  <ul class="products">
+    <li *ngFor="let product of products">
+      <span class="badge">{{product.id}}</span> {{product.name}}
+    </li>
+  </ul>
 </div>
 
   <label>
