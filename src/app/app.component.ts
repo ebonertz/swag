@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 
+export class Product {
+  id: number;
+  name: string;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,6 +12,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Swag';
-  name = '';
-
+  product: Product = {
+    id: 1,
+    name: 'Sticker'
+  };
 }
