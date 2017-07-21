@@ -8,32 +8,36 @@
 <div class="interaction" style="text-align:center"> What is your name?
   <input type="text" [(ngModel)]="name">
   <p>{{ name }}</p>
-<br>
-<div class="product-tile" style="border:1px solid black; text-align:center;">
-  <h2> My Products</h2>
-  <ul class="products">
-    <li *ngFor="let product of products">
-      <span class="badge">{{product.id}}</span> {{product.name}}
-    </li>
-  </ul>
-</div>
-
+  <br>
   <label>
     <input type="radio" ng-Model="gender" value="male"> Male
   </label>
   <label>
     <input type="radio" ng-Model="gender" value="female"> Female
   </label>
+<hr>
+<br>
+<div class="product-box">
+  <h2> My Products</h2>
+  <ul class="products" style="list-style:none;">
+    <li class="product-tile"  *ngFor="let product of products">
+      <div class="badge">{{product.id}}</div>
+      <div> {{product.name}} </div>
+    </li>
+  </ul>
+</div>
+
+
 <h2> More Resources </h2>
 <ul style="list-style: none">
   <li>
-    <h2><a href="https://www.commercetools.com">commercetools Website</a></h2>
+    <h4><a href="https://www.commercetools.com">commercetools Website</a></h4>
   </li>
   <li>
-    <h2><a href="https://blog.commercetools.com/">commercetools Blog</a></h2>
+    <h4><a href="https://blog.commercetools.com/">commercetools Blog</a></h4>
   </li>
   <li>
-    <h2><a href="http://dev.commercetools.com/">commercetools Dev Docs</a></h2>
+    <h4><a href="http://dev.commercetools.com/">commercetools Dev Docs</a></h4>
   </li>
 </ul>
 </div>

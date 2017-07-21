@@ -14,14 +14,10 @@ export class Product {
 export class AppComponent {
   title = 'Swag';
   products = PRODUCTS;
-  product: Product = {
-    id: 1,
-    name: 'Sticker'
-  }
 };
 
 const PRODUCTS: Product [] = [
-{id: 1, name: 'Sticker'},
+{id: 1, name:'Sticker'},
 {id:2, name:'Pen'},
 {id:3, name:'Bandana'}
 ];
