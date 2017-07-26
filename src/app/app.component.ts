@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 export class Product {
   id: number;
   name: string;
+  price: number;
 }
 
 @Component({
@@ -17,7 +18,7 @@ export class AppComponent {
 };
 
 const PRODUCTS: Product [] = [
-{id: 1, name:'Sticker'},
-{id:2, name:'Pen'},
-{id:3, name:'Bandana'}
+{id:1, name:'Sticker', price:2},
+{id:2, name:'Pen', price:3},
+{id:3, name:'Bandana', price:5}
 ];

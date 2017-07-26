@@ -11,17 +11,22 @@
   <br>
 <hr>
 <br>
+  <h2>Products</h2>
 <div class="product-box">
-  <h2> My Products</h2>
+
   <ul class="products" style="list-style:none;">
     <li class="product-tile"  *ngFor="let product of products">
       <div class="badge">{{product.id}}</div>
-      <div> {{product.name}} </div>
+      <div class="product-image">
+        <img src="http://berlin.ecomhack.io/img/partners/commercetools-logo.png" />
+      </div>
+      <div class="product-name"> {{product.name}} </div>
+      <div class="product-price"> $ {{product.price}} </div>
     </li>
   </ul>
 </div>
-
-
+<hr>
+<br>
 <h2> More Resources </h2>
 <ul style="list-style: none">
   <li>
