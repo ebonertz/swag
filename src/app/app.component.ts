@@ -15,6 +15,11 @@ export class Product {
 export class AppComponent {
   title = 'Swag';
   products = PRODUCTS;
+  selectedProduct: Product;
+
+  onSelect(product: Product): void {
+    this.selectedProduct = product;
+  }
 };
 
 const PRODUCTS: Product [] = [

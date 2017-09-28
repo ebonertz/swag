@@ -1,58 +1,64 @@
-
-  .products {
+.products {
     list-style-type: none;
     width:20em;
-  }
-  .products li {
-    cursor: pointer;
-    vertical-align: middle;
-    background-color: #EEE;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-    padding: 1em;
-    height: 10em;
-    border-radius: 4px;
-    box-shadow: 10px 10px 10px -10px black;
-  }
-  .products li.selected:hover {
-    background-color: #BBD8DC !important;
+}
+.products li {
+  cursor: pointer;
+  vertical-align: middle;
+  background-color: #EEE;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  padding: 1em;
+  height: 10em;
+  border-radius: 4px;
+  box-shadow: 10px 10px 10px -10px black;
+}
+
+.products li.selected {
+    background-color: #BBD8DC;
     color: white;
   }
-  .products li:hover {
-    color: #607D8B;
-    background-color: #DDD;
-    left: .1em;
-  }
 
-  .products li img {
-    width: 100px;
-    margin-top: -20px;
-  }
+.products li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+}
 
-  .products .badge {
-    display: block;
-    font-size: small;
-    color: white;
-    padding: 1em 1em 1em 1em;
-    background-color: #607D8B;
-    line-height: 1em;
-    position: relative;
-    left: -1px;
-    top: -4px;
-    height: 3em;
-    width: 3em;
-    margin-right: 1em;
-    margin-left: ;
-    border-radius: 4px 4px 4px 4px;
-  }
- .product-box {
-   /*border: 1px solid black;*/
-   max-width: 500px;
-   margin-left: auto;
-   margin-right: auto;
-   vertical-align: middle;
-   display: flex;
-   align-content: center;
-   justify-content: center;
- }
+.products li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+
+.products li img {
+  width: 100px;
+  margin-top: -20px;
+}
+
+.products .badge {
+  display: block;
+  font-size: small;
+  color: white;
+  padding: 1em 1em 1em 1em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 3em;
+  width: 3em;
+  margin-right: 1em;
+  margin-left: ;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.product-box {
+ max-width: 500px;
+ margin-left: auto;
+ margin-right: auto;
+ vertical-align: middle;
+ display: flex;
+ align-content: center;
+ justify-content: center;
+}
