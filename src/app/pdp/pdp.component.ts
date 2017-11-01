@@ -5,11 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './pdp.component.html',
   styleUrls: ['./pdp.component.css']
 })
-export class PdpComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class PdpComponent {
+  productName = 'Pizza';
+  productPrice = 14;
 }
